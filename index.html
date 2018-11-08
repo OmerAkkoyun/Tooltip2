@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tooltips kullanımı</title>
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+    <style>
+        body{
+            text-align: center;
+            margin:15px 25px;
+        
+        }
+        
+    </style>
+</head>
+<body>
+   
+   
+   <!-- Tooltips //tooltip çalışması için jquery koduna ihtiyacımız var oda en aşağıdaki script içinde incele.-->
+   
+   <a href="#" class="btn btn-primary" data-toggle="tooltip" title="Tooltip Yazımız.default">
+   L i n k
+   </a>
+   
+  
+   <br>
+   <br>
+   <br>
+   
+    <!-- üssten açılsın tooltip-->
+   
+   <a href="#" class="btn btn-secondary" data-toggle="tooltip" title="Tooltip Yazımız.üstten" data-placement="top">
+   L i n k
+   </a>
+   
+ 
+   <br>
+   <br>
+   
+    <!-- sağdan açılsın tooltip-->
+   
+   <a href="#" class="btn btn-danger" data-toggle="tooltip" title="Tooltip Yazımız.sağdan" data-placement="right">
+   L i n k
+   </a>
+   
+ 
+   <br>
+   <br>
+   
+    <!-- alttan açılsın tooltip-->
+   
+   <a href="#" class="btn btn-success" data-toggle="tooltip" title="Tooltip Yazımız.alttan" data-placement="bottom">
+   L i n k
+   </a>
+   
+   <br>
+   <br>
+   
+    <!-- soldan açılsın tooltip-->
+   
+   <a href="#" class="btn btn-warning" data-toggle="tooltip" title="Tooltip Yazımız.soldan" data-placement="left">
+   L i n k
+   </a>
+   
+   <!--*********************************************************-->
+   
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+    
+    <!--tooltip çalışsın diye //jquery kodu-->
+    <script>
+    $('[data-toggle="tooltip"]').tooltip();
+    </script>
+</body>
+</html>
